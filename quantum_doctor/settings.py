@@ -73,7 +73,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "quantum_doctor.wsgi.application"
-
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['.railway.app']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
